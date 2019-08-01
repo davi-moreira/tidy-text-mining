@@ -107,7 +107,7 @@ The words with the greatest differences between the two topics are visualized in
 
 (ref:topiccap) Words with the greatest difference in $\beta$ between topic 2 and topic 1
 
-```{r topiccompare, dependson = "beta_spread", fig.cap = "(ref:topiccap)", echo = FALSE}
+```{r topiccompare, dependson = "beta_spread", fig.cap = "(ref:topiccap)", echo = TRUE}
 beta_spread %>%
   group_by(direction = log_ratio > 0) %>%
   top_n(10, abs(log_ratio)) %>%
